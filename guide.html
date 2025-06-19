@@ -14,9 +14,9 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/responsive.css">
   <style>
-    body {
+    /* body {
       background-color: #f9f5f0;
-    }
+    } */
     .guide-title {
       font-size: 20px;
       font-weight: 700;
@@ -41,6 +41,8 @@ text-align: justify;
 
     .tab-content {
       min-height: 200px;
+        color:black;
+
     }
     #ui {
       font-family: "Roboto Condensed";
@@ -66,7 +68,14 @@ text-align: justify;
 }
 
 
-
+.tab-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: black;
+    /* width: 450px; */
+    text-align: justify;
+    font-family: 'ROBOTO CONDENSED';
+}
 
  @media screen and (max-width:1280px)
   {
@@ -84,6 +93,8 @@ text-align: justify;
   max-width: 1000px;
   margin: 2rem auto;
   box-shadow: 0 4px 12px rgb(0 0 0 / 0.25);
+  color:black;
+
 }
 
 /* Nav pills style */
@@ -113,7 +124,7 @@ text-align: justify;
 
 /* Tab content area */
 .tab-content {
-  color: #eee;
+  color:black;
   font-family: 'Roboto Condensed';
   font-size: 1rem;
   line-height: 1.6;
@@ -123,7 +134,8 @@ text-align: justify;
 .tab-content h4 {
   font-family: 'Fugaz One';
   font-weight: 700;
-  color: #fff;
+  color:black;
+
   margin-bottom: 1rem;
 }
 
@@ -131,7 +143,7 @@ text-align: justify;
 /* Table styling */
 .table {
   background-color: transparent;
-  color: #fff;
+  color:black;
   border-color: #666;
 }
 
@@ -309,7 +321,7 @@ text-align: justify;
 </section>
 
 
-<div class="rounded bg-dark p-5 text-light" id="qw" style="max-width: 1000px;">
+<div class="rounded p-5 " id="qw" style="max-width: 1000px;">
   <ul class="nav nav-pills mb-4 justify-content-between" id="policyTabs" role="tablist">
     <li class="nav-item w-23" role="presentation">
       <button class="nav-link text-uppercase w-100" id="size-guide-tab" data-bs-toggle="pill" data-bs-target="#size-guide" type="button" role="tab" aria-controls="size-guide" aria-selected="false">Size Guide</button>
