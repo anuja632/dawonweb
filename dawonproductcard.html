@@ -78,6 +78,14 @@
     margin-right: 22px;
 }
 
+.accordion-button::before {
+    content: "+";
+    position: absolute;
+    right: 14px;
+    font-size: 24px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
 .nav-tabs {
   --bs-nav-tabs-border-width: 0; /* Remove bottom border line if not needed */
   border-bottom: none !important;
@@ -115,7 +123,14 @@
   border-collapse: collapse;
   width: 100%;
 }
-#uy th,
+#uy th{
+  font-weight: 400; /* no bold */
+  padding: 10px 12px;
+  vertical-align: top;
+  color: black !important;
+  font-family: "Roboto";
+  font-weight: bold;
+}
 #uy td {
   font-weight: 400; /* no bold */
   padding: 10px 12px;
@@ -123,6 +138,7 @@
   color: black !important;
   font-family: "Roboto";
 }
+
 .custom-rope-table {
   width: 100%;
   border-collapse: collapse;
@@ -284,7 +300,7 @@
   <div class="product-card row">
     <!-- Product Image -->
     <div class="product-image col-md-6 text-center">
-      <img id="mainImage" src="image/dawon1.9 (1).png" class="img-fluid mb-3" alt="Speed Rope">
+      <img id="mainImage" src="image/dawon1.9.png" class="img-fluid mb-3" alt="Speed Rope" width="520" height="520">
 
     </div>
 
@@ -313,9 +329,9 @@
 </div>
 
       <div class="thumbs d-flex justify-content-center">
-        <img src="image/dawon.jpg" onclick="changeImage(this)" class="active">
-        <img src="image/dawon1.9 (2).png" onclick="changeImage(this)">
-        <img src="image/speed6.png" onclick="changeImage(this)">
+        <img src="image/dawon1.9.png" onclick="changeImage(this)" class="active">
+        <img src="image/speed12.jpg" onclick="changeImage(this)">
+        <img src="image/speed11.png" onclick="changeImage(this)">
         <img src="image/dawon1.9 (1).png" onclick="changeImage(this)">
 
       </div>
@@ -326,8 +342,10 @@
     <h2 class="accordion-header" id="headingSpec">
       <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpec" aria-expanded="false" aria-controls="collapseSpec" style="color:#c80000; margin-right: 10px;" >
         <img src="image/Format list bulleted.png" width="20px" style="margin-right: 8px;">
-        PRODUCT SPEC
-      </button>
+<div class="info-container">
+  <div class="product">PRODUCT</div>
+  <div class="spec">SPEC</div>
+</div>      </button>
     </h2>
     <div id="collapseSpec" class="accordion-collapse collapse " data-bs-parent="#productAccordion" style="color:black !important">
       <div class="accordion-body">
@@ -359,7 +377,11 @@
     <h2 class="accordion-header" id="headingFeatures">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFeatures" aria-expanded="false" aria-controls="collapseFeatures" style="color:#c80000">
         <img src="image/Test Passed.png" width="20px" style="margin-right: 8px;">
-        PRODUCT FEATURES
+        <!-- PRODUCT FEATURES -->
+        <div class="info-container">
+  <div class="product">PRODUCT</div>
+  <div class="spec"> FEATURES</div>
+</div> 
       </button>
     </h2>
     <div id="collapseFeatures" class="accordion-collapse collapse" data-bs-parent="#productAccordion">

@@ -965,5 +965,9 @@ color:#000
     }
 
 
+    .info-container {
+  display: flex;
+  gap: 10px; /* Adds space between children */
+}
 
 
