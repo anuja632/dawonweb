@@ -922,6 +922,8 @@ align-items: center;
       color: #ccc;
       /* width: 450px; */
       text-align: justify;
+          font-family: 'ROBOTO CONDENSED';
+
     }
 
   .scrollbar-container {
