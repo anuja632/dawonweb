@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dawon Athletics | Benefits</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-..." crossorigin="anonymous">
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto+Condensed&display=swap" rel="stylesheet" />
+<!-- jQuery (required by Owl Carousel) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<style>
+    h2{
+      font-family: "Fugaz One";
+    }
+.benefit-img {
+  width: 100%;        /* fills container width */
+  max-width: 400px;   /* max width */
+  height: 300px;      /* fixed height */
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+        #ui {
+      font-family: "Roboto Condensed";
+      font-size: 18px;
+      text-align: justify;
+
+    }
+    @media(min-width: 768px) {
+      .benefit-row {
+        align-items: center;
+      }
+    }
+    @media (max-width: 500px) {
+  .benefit-row {
+    row-gap: 25px;
+  }
+}
+  body {
+    padding-top: 80px; /* Adjust if your navbar height is different */
+  }
+
+
+</style>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark py-3 fixed-top">
+  <div class="container-fluid">
+    <!-- Logo + Brand -->
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <div class="logo-wrapper">
+        <img src="image/logo.png" alt="Logo" class="logo-img me-2" height="40">
+      </div>
+    </a>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar content -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <!-- Centered search bar -->
+      <form class="d-flex mx-lg-auto my-2 my-lg-0 search-bar">
+        <div class="input-group rounded-pill custom-input-group">
+          <span class="input-group-text bg-white border-0">
+            <i class="fas fa-search text-muted"></i>
+          </span>
+          <input 
+            type="search" 
+            class="form-control border-0 shadow-none" 
+            placeholder='Search for "Weight Loss Ropes"' 
+            aria-label="Search"
+          >
+        </div>
+      </form>
+
+      <!-- Nav links -->
+      <ul class="navbar-nav ms-lg-4 align-items-lg-center">
+        <!-- Products with hover dropdown -->
+        <li class="nav-item dropdown position-relative mx-2">
+          <div class="d-flex align-items-center">
+    <a href="dawonproduct.html" class="nav-link text-white pe-1">Products</a>
+    <span class="dropdown-toggle-arrow text-white" style="cursor: pointer;">&#9662;</span> <!-- ▼ arrow -->
+  </div>
+
+<div class="dropdown-menu canvas-dropdown shadow-lg p-4">
+<div class="row text-center">
+  <!-- A Star Ropes -->
+  <div class="col-md-3">
+    <div class="dropdown-card shadow-sm">
+      <img src="image/dawon1.6.png" class="card-img-top" alt="A Star Ropes" height="">
+      <div class="card-footer text-white fw-bold">A Star Ropes</div>
+    </div>
+  </div>
+
+  <!-- Speed Ropes -->
+  <div class="col-md-3">
+    <div class="dropdown-card shadow-sm">
+      <img src="image/dawon1.png" class="card-img-top" alt="Speed Ropes">
+      <div class="card-footer text-white fw-bold">Speed Ropes</div>
+    </div>
+  </div>
+
+  <!-- Beast Ropes -->
+  <div class="col-md-3">
+    <div class="dropdown-card shadow-sm">
+      <img src="image/dawon2.3.png" class="card-img-top" alt="Beast Ropes">
+      <div class="card-footer text-white fw-bold">Beast Ropes</div>
+    </div>
+  </div>
+
+  <!-- Side Links -->
+  <div class="col-md-3 text-start">
+<ul class="list-unstyled text-white mt-2 fs-6">
+  <li><a href="dawonproduct.html" class="text-white text-decoration-none">Discover Your Perfect Set</a></li>
+  <li><a href="dawonproduct.html" class="text-white text-decoration-none">Classic Ropes</a></li>
+  <li><a href="dawonproduct.html" class="text-white text-decoration-none">Handles for Jump Ropes</a></li>
+  <li><a href="dawonproduct.html" class="text-white text-decoration-none">High-Performance Ropes</a></li>
+  <li><a href="dawonproduct.html" class="text-white text-decoration-none">Kids Collection</a></li>
+</ul>
+  </div>
+</div>
+
+</div>
+
+        </li>
+
+        <li class="nav-item mx-2">
+          <a class="nav-link text-white" href="guide.html">Guide</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link text-white" href="contactus.html">Contact Us</a>
+        </li>
+        <li class="nav-item mx-2 text-center">
+          <a class="nav-link text-white d-flex flex-column align-items-center" href="#">
+            <i class="fas fa-user mb-1"></i>
+            <span>Sign in</span>
+          </a>
+        </li>
+        <li class="nav-item mx-2 text-center">
+          <a class="nav-link text-white d-flex flex-column align-items-center" href="#">
+            <i class="fas fa-shopping-cart mb-1"></i>
+            <span>Cart</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<section class="py-5" style="max-width: 1000px; margin: auto;">
+  <div class="container">
+    <h2 class="mb-5 fw-bold text-center">Top 5 Reasons to Make Jump Rope Your Go-To Workout</h2>
+    
+    <!-- Benefit 1 -->
+    <div class="row benefit-row mb-5">
+      <div class="col-md-5">
+        <img src="https://img.freepik.com/free-photo/young-attractive-woman-doing-sport-exercises-morning-sunrise-sea-beach-sports-wear-healthy-lifestyle-listening-music-earphones-wearing-pink-windbreaker-jacket-jumping-jump-rope_285396-5593.jpg?semt=ais_hybrid&w=740" alt="Burning Calories" class="benefit-img" />
+      </div>
+      <div class="col-md-7">
+        <h4>1. Burn Calories Efficiently and Boost Metabolism</h4>
+        <p id="ui">Jumping rope is one of the most effective cardiovascular workouts available, helping you burn more calories in less time compared to many traditional exercises. Just 15 minutes can torch up to 600 calories, making it perfect for those with busy schedules.</p>
+        <p id="ui">Alongside calorie burning, jump rope workouts stimulate your metabolism to stay elevated even after you finish exercising, enhancing fat loss and improving overall endurance.</p>
+      </div>
+    </div>
+
+    <!-- Benefit 2 -->
+    <div class="row benefit-row mb-5 flex-md-row-reverse">
+      <div class="col-md-5">
+        <img src="https://m.media-amazon.com/images/I/61skhELN15L._AC_UF1000,1000_QL80_.jpg" alt="Full Body Workout" class="benefit-img" />
+      </div>
+      <div class="col-md-7">
+        <h4>2. Strengthen and Tone Your Entire Body</h4>
+        <p id="ui">Unlike workouts that focus on specific muscle groups, jump rope engages your arms, shoulders, legs, and core simultaneously. This multi-muscle involvement helps build functional strength, improve coordination, and develop lean muscle tone.</p>
+        <p id="ui">Regular jump rope training also enhances joint mobility and balance, reducing the risk of injury and supporting everyday movement with greater ease.</p>
+      </div>
+    </div>
+
+    <!-- Benefit 3 -->
+    <div class="row benefit-row mb-5">
+      <div class="col-md-5">
+        <img src="https://img.freepik.com/free-photo/male-training-with-jumping-rope-river_181624-48953.jpg?semt=ais_hybrid&w=740" alt="Fitness Community" class="benefit-img" />
+      </div>
+      <div class="col-md-7">
+        <h4>3. Connect with a Motivating and Supportive Community</h4>
+        <p id="ui">The jump rope scene is welcoming and inspiring, with countless enthusiasts worldwide sharing tips, challenges, and progress updates. Joining this community means tapping into a network of encouragement, accountability, and fun.</p>
+        <p id="ui">From beginner-friendly tutorials to advanced trick showcases, the supportive culture helps maintain your motivation and keeps workouts fresh and exciting.</p>
+      </div>
+    </div>
+
+    <!-- Benefit 4 -->
+    <div class="row benefit-row mb-5 flex-md-row-reverse">
+      <div class="col-md-5">
+        <img src="https://img.freepik.com/premium-photo/boy-doing-skipping-jump-with-rope-jumping-rope-lose-weight-more_181020-3926.jpg" alt="Brain Focus" class="benefit-img" />
+      </div>
+      <div class="col-md-7">
+        <h4>4. Sharpen Cognitive Skills and Mental Agility</h4>
+        <p id="ui">Jump rope is as much a brain workout as it is physical. The coordination required between hands, feet, and eyes enhances focus, timing, and rhythm. These benefits carry over to improved concentration and mental sharpness in everyday life.</p>
+        <p id="ui">Practicing new jump rope tricks and routines challenges your brain, building neural connections that support learning and memory — helping you stay mentally fit along with your body.</p>
+      </div>
+    </div>
+
+    <!-- Benefit 5 -->
+    <div class="row benefit-row">
+      <div class="col-md-5">
+        <img src="https://img.freepik.com/premium-photo/low-angle-view-man-exercising-against-blue-sky_1048944-9415051.jpg" alt="Strong Bones" class="benefit-img" />
+      </div>
+      <div class="col-md-7">
+        <h4>5. Enhance Bone Strength and Support Long-Term Health</h4>
+        <p id="ui">Repeated impact from jumping helps stimulate bone growth and increases bone density, crucial factors in preventing osteoporosis and fractures later in life. Building stronger bones today lays a solid foundation for maintaining mobility and independence as you age.</p>
+        <p id="ui">Incorporating jump rope into your routine promotes skeletal health while also benefiting your cardiovascular system, making it a well-rounded choice for lifelong wellness.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<!-- footer -->
+<footer class="footer bg-dark text-white pt-5">
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Logo & Contact Info -->
+      <div class="col-md-4">
+  <div class="logo-wrapper">
+    <img src="image/logo.png" alt="Logo" class="logo-img me-2">
+  </div>        <p style="
+    margin-top: 20px;
+"><i class="fas fa-map-marker-alt me-2 text-danger"></i> Sf. No. 4/1, Nandhavanam Phase-4, Perumal Kovil Back Side, Gokulnagar,Hosur, Krishnagiri - 635109, Tamilnadu, India</p>
+        <p  class="mb-2"><i class="fas fa-envelope me-2 text-danger"></i> dawonathletics@gmail.com</p>
+        <p  class="mb-2"><i class="fas fa-mobile-alt me-2 text-danger"></i> +91 8056356548</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-2">
+        <h6 class="fw-bold">QUICK LINKS</h6>
+        <ul class="list-unstyled">
+          <li  class="mb-2"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+          <li  class="mb-2"><a href="dawonproduct.html" class="text-white text-decoration-none">Products</a></li>
+          <li  class="mb-2"><a href="guide.html" class="text-white text-decoration-none">Guide</a></li>
+          <li  class="mb-2"><a href="Benefits.html" class="text-white text-decoration-none">Benefits</a></li>
+          <li  class="mb-2"><a href="contactus.html" class="text-white text-decoration-none">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Products -->
+      <div class="col-md-3">
+        <h6 class="fw-bold">PRODUCTS</h6>
+        <ul class="list-unstyled">
+          <li  class="mb-2"><a href="dawonproduct.html" class="text-white text-decoration-none">A Star Weighted Jump Ropes</a></li>
+          <li  class="mb-2"><a href="dawonproduct.html" class="text-white text-decoration-none">Speed Jump Ropes</a></li>
+          <li  class="mb-2"><a href="dawonproduct.html" class="text-white text-decoration-none">Beast Ropes</a></li>
+          <li  class="mb-2"><a href="dawonproduct.html" class="text-white text-decoration-none">Rope Accessories</a></li>
+          <li  class="mb-2"><a href="dawonproduct.html" class="text-white text-decoration-none">Classic Ropes</a></li>
+
+        </ul>
+      </div>
+
+      <!-- Help Links -->
+      <div class="col-md-3">
+        <h6 class="fw-bold">HELP</h6>
+        <ul class="list-unstyled">
+          <li  class="mb-2"><a href="dawonprivacy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+          <li  class="mb-2"><a href="dawontermandcondition.html" class="text-white text-decoration-none">Terms And Condition</a></li>
+          <li  class="mb-2"><a href="dawonreefund.html" class="text-white text-decoration-none">Cancellation And Refund</a></li>
+          <li  class="mb-2"><a href="dawonshipping.html" class="text-white text-decoration-none">Shipping And Delivery Policy</a></li>
+        </ul>
+
+        <!-- Social Icons -->
+        <div class="d-flex  social-media  mt-3">
+          <a href="#" class="text-white "><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white "><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="text-white "><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white "><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom bg-secondary text-center py-3 mt-4">
+    <p class="mb-0 ">Copyright © 2025 <span class="fw-bold">Dawon Athletics.</span> All Rights Reserved</p>
+  </div>
+</footer>
+
+<!-- Bootstrap 5 JS Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>

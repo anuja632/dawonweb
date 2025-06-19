@@ -1,0 +1,969 @@
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+/* Apply global box-sizing fix */
+* {
+  box-sizing: border-box;
+}
+ 
+ /* navbar */
+/* Logo wrapper with white background */
+.logo-wrapper {
+  background-color: white;
+  padding: 4px;
+  border-radius: 8px;
+  display: inline-block;
+}
+/* Logo image height */
+.logo-img {
+  height: 50px;
+}
+.navbar {
+      background-color: #000 !important;
+      font-size: 22px ;
+    font-family: "Roboto Condensed";
+     gap:10px;    
+}
+.navbar-nav{
+  gap:20px;
+}
+
+.navbar .container-fluid {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.search-bar {
+      max-width: 400px;
+      width: 100%;
+      color:#8996A2;
+}
+.custom-input-group {
+  background-color:white;
+  padding: 6px 10px;
+  border-radius: 999px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.custom-input-group input::placeholder {
+  color: #8996A2;
+  font-weight: 600;
+  letter-spacing: 1px;
+ 
+}
+
+.custom-input-group .input-group-text {
+  background: transparent;
+  border: none;
+  padding-left: 0;
+   margin-left: 10px;
+}
+
+.custom-input-group i {
+  font-size: 18px;
+}
+
+
+    /* Mega menu custom */
+    .canvas-dropdown {
+      position: absolute;
+      left: -650px;
+      right: 0;
+      top: 100%;
+      width:1000px;
+      background-color: #111;
+      display: none;
+      z-index: 1000;
+    }
+
+    .dropdown-card {
+      background: #222;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .dropdown-card img {
+      width: 100%;
+      height: auto;
+    }
+    /* Target the unordered list */
+.canvas-dropdown ul {
+  font-size: 20px;        /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;         
+}
+
+/* Optional: Enhance link appearance */
+.canvas-dropdown ul li a {
+  font-weight: 500;
+}
+
+
+    .dropdown-card .card-footer {
+      padding: 0.5rem;
+      background-color: #333;
+      text-align: center;
+    }
+
+    .dropdown:hover .canvas-dropdown {
+      display: block;
+    }
+    .search-bar input {
+      min-width: 220px;
+    }
+    
+/* carousel */
+.item1 {
+  background-image: url('./../image/banner1.jpg'); /* Update for all */
+  background-size: cover;
+}
+.item2{
+  background-image: url('./../image/banner2.png'); /* Update for all */
+  background-size: cover;
+}
+.item3{
+  background-image: url('./../image/banner3.png'); /* Update for all */
+   background-size: cover;
+}
+.owl-carousel .item {
+  position: relative;
+  height: 90vh;
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-color: #000 !important;
+  margin-left: 0px !important;
+  padding: 0 !important;
+
+}
+
+.owl-carousel .item img{
+    width:100% !important;
+    height:100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+
+.owl-carousel .item::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Adjust opacity/color here */
+  z-index: 1;
+}
+
+.carousel-caption {
+  position: relative;
+  z-index: 2; /* To make sure caption is above the overlay */
+}
+
+.carousel-caption {
+  max-width: 900px;
+  padding: 2rem;
+  left:10%;
+  border-radius: 10px;
+  text-align: start !important;
+}
+
+.carousel-caption h1 {
+      font-size: 3.3rem;
+      font-weight: 800;
+      font-family:"Fugaz One";
+    }
+
+    .carousel-caption p {
+      font-size:26px;
+      margin-top: 1rem;
+      font-family: "Roboto Condensed";
+      width:400px;
+      text-align: justify;
+    }
+
+    .carousel-caption .btn {
+      background-color:#C80000;
+      border: none;
+      font-weight: 700;
+      padding: 12px 24px;
+      font-size: 1.5rem;
+      border-radius: 8px;
+      margin-top: 1.5rem;
+      color:#FFFFFF;
+      font-family: "Roboto Condensed";
+
+    }
+    .text-dark{
+        font-family: "Roboto Condensed" !important;
+    }
+    .badge{
+       font-family: "Roboto Condensed" !important;
+       font-size: 14px;
+    }
+
+
+
+    /* Navigation Styling */
+    .owl-nav {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 20px;
+        transform: translateY(-50%);
+
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    .owl-prev, .owl-next {
+      background-color: white !important;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      color: gray;
+      cursor: pointer;
+      pointer-events: all;
+      transition: all 0.3s ease;
+      z-index: 10000;
+    }
+
+    .owl-prev:hover, .owl-next:hover {
+      background-color: #eee;
+      color: #000;
+    }
+
+.vertical-line {
+  border-left: 2px solid #C80000;
+  height: 40px;
+}
+
+.herodown-img{
+  width:50px;
+  height:50px;
+}
+.herodown{
+  font-family: "Roboto Condensed";
+  font-size: 24px;
+  color:#C80000;
+}
+.hero-image {
+  position: relative;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+.hero img {
+  width:100%;
+  height:100%;
+}
+
+
+.speed {
+  background: linear-gradient(to bottom, #c9001f, #b8001e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+        font-weight: 1000;
+      font-size: 6rem;
+        font-family:"Fugaz One";
+
+}
+
+.ropes {
+  background: linear-gradient(to bottom, #2e0000, #b8001e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+        font-weight: 1000;
+      font-size: 6rem;
+      margin-left:30px;
+        font-family:"Fugaz One";
+
+}
+
+.master {
+  background: linear-gradient(to bottom, #1C5DB5, #164ca0); /* Gradient blue */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+        font-weight: bold;
+      font-size: 2.5rem;
+font-family: 'Bebas Neue';
+
+}
+
+.your-motion {
+  background: linear-gradient(to right,#1C5DB5, #000000); /* Very dark gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+        font-weight: bold;
+      font-size: 2.5rem;
+      font-family: 'Bebas Neue';
+
+
+}
+
+.card{
+  padding: 20px 15px 0px 15px;
+}
+.card-title{
+  font-family:"Roboto Condensed";
+  font-weight: bold;
+      font-size: 1.7rem;
+
+}
+.card-button{
+      background-color:#C80000;
+      border: none;
+      padding:10px;
+      font-size: 1rem;
+      border-radius: 8px;
+  font-family:"Roboto Condensed";
+
+      color:#FFFFFF;
+    }
+    a{
+      text-decoration: none !important;
+    }
+    .card-text{
+      text-align: justify;
+      color:#000000;
+    font-size: 19px;
+    }
+      .image-slider-wrapper {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .image-slider-wrapper {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .image-slider-wrapper img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+  transition: opacity 0.4s ease, border 0.4s ease;
+  border: 3px solid transparent; /* No border by default */
+  border-radius: 10px;   }
+
+
+.image-slider-wrapper img.active {
+  opacity: 1;
+}
+  .slider-progress {
+    position: absolute;
+    top: 9px;
+    left: 15px;
+    display: flex
+;
+    gap: 5px;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 90%;
+    text-align: center;
+  }
+
+  .image-slider-wrapper:hover .slider-progress {
+    opacity: 1;
+  }
+
+  .slider-progress span {
+    flex: 1;
+    background: rgba(24, 24, 24, 0.3);
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+    height: 4px;
+    width: 40px;
+  }
+
+  .slider-progress .fill {
+    height: 100%;
+    width: 0%;
+    background: #c80000;
+  }
+  
+        .category-section {
+      padding: 60px 0;
+      /* text-align: center; */
+    }
+
+    .category-section h2 {
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      font-family: "Fugaz One",cursive;
+color:#000
+    }
+
+
+
+    .category-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .category-card img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .category-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .category-label {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #fff;
+      font-family: "Roboto Condensed";
+      text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+    
+       .banner {
+      background-color: white;
+      padding:60px -1px 0px 30px;
+      /* background-image: url("./../image/astar.png"); */
+
+    }
+    .banner  img{
+      width:100%;
+      height:100%;
+
+    }
+
+    .banner h1 {
+      font-weight: 800;
+      font-size: 4rem;
+      margin-bottom: 10px;
+          line-height: 1.2;
+    }
+
+    .text-red {
+      color: #9b0d1e;
+    }
+
+    .text-dark-red {
+      color: #330000;
+    }
+
+    .text-gradient-red {
+      background: linear-gradient(to right, #9b0d1e, #330000);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .text-gradient-blue-black {
+      background: linear-gradient(to right, #004aad, #000000);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+      font-size: 2rem;
+      font-family: 'Bebas Neue';
+
+    }
+
+    .banner img {
+      max-width: 100%;
+      height: auto;
+    }
+    .heros img {
+      max-width: 100%;
+      height: auto;
+    }
+    /* .heros {
+      background: url('./../image/beast.jpg') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding-left: 1%;
+      color: #000;
+    
+    } */
+
+    .heros-content {
+      background: none;
+      /* padding: 40px 30px; */
+      max-width: 600px;
+      backdrop-filter: brightness(105%);
+    }/* Red Box Background */
+.red-box {
+  background-color: #cc0000;
+  border-radius: 20px;
+  overflow: hidden;
+  /* margin: 4px 0px 0px 0px; */
+}
+
+
+
+/* Image Handling */
+/* .jump-image {
+  max-height: 550px !important;
+  object-fit: contain;
+  width:auto;
+} */
+#why{
+  font-family: "Roboto Condensed";
+  font-size: 22px;
+}
+#au{
+  margin-top:130px !important;
+
+}
+#la{
+  font-weight: 500;
+  font-size: 4.5rem;
+  font-family: "Fugaz One";
+}
+#lo{
+  margin-left:-200px;
+}
+
+/* Optional: Ensure full height alignment */
+.jump-banner {
+background-color: #f4e9e2;}
+.video-banner {
+  background: url('./../image/girl.png') no-repeat center center;
+  background-size: cover;
+  height: 70vh;
+  position: relative;
+}
+
+  .video-banner {
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.4); /* optional dark overlay for better text contrast */
+    z-index: 2;
+  }
+
+  .content {
+    z-index: 3;
+    position: relative;
+    max-width: 1200px;
+    padding: 20px;
+    /* margin-top: 20px; */
+  }
+
+
+
+
+
+.play-icon {
+  z-index: 3;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 60px;
+  height: 60px;
+}
+.play-icon img {
+  width: 100%;
+  height: auto;
+}
+.lead{
+  font-size: 22px;
+  font-weight: 500;
+}
+.cae{
+  background-color:#C80000;
+      border: none;
+      padding:20px;
+      border-radius: 8px;
+  font-size: 22px;
+  width: 400px;
+      color:#FFFFFF;
+    }
+
+
+    .footer {
+  font-family: "Poppins";
+      font-size: 17px;
+
+}
+
+h6{
+  font-size: 22px !important;
+  margin-bottom:20px ;
+
+}
+.footer-bottom {
+  background: rgba(112, 131, 137, 0.2) !important;
+
+  color:rgba(146, 146, 146, 1);
+}
+.footer-bottom span {
+ color: rgba(200, 0, 0, 1)}
+.social-media a {
+  font-size: 25px;
+  margin-top:30px;
+}
+.social-media {
+  gap: 30px;
+}
+
+
+/* product page */
+.shop-now-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  font-family: "Roboto Condensed";
+}
+
+.shop-now-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Default image height control
+.position-relative img {
+  height: 250px;
+  object-fit: contain;
+  background-color: #fff;
+} */
+h4{
+  font-family: "Roboto Condensed";
+}
+.speedrope{
+  font-family:"Fugaz One";
+font-size: 25px;}
+.spped{
+  color:rgba(0, 0, 0, 1);
+    font-family: "Roboto Condensed";
+font-size: 22px;
+
+}
+.accordion-wrapper {
+  max-width: 600px;
+  width: 100%;
+  font-family: "Roboto Condensed";
+}
+.accordion-button {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  font-weight: 600;
+  position: relative;
+  padding-right: 2rem;
+    font-family: "Roboto Condensed";
+
+}
+
+/* Remove default arrow */
+.accordion-button::after {
+  display: none;
+}
+
+/* Add custom plus/minus using ::before */
+.accordion-button::before {
+  content: "+";
+  position: absolute;
+  right: 0;
+  font-size: 24px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+/* Change + to - when open */
+.accordion-button:not(.collapsed)::before {
+  content: "−"; /* Unicode minus sign */
+}
+
+/* terms and condition page */
+
+    .list-group-item.active,
+    .list-group-item:hover {
+      background-color:#C80000;
+      border-color:#C80000;
+      color: #fff;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    
+    .section-content {
+      margin-bottom: 2rem;
+    }
+
+     .product-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .product-image {
+      flex: 1 1 300px;
+      padding: 2rem;
+    }
+    .product-info {
+      flex: 1 1 300px;
+      padding: 2rem;
+
+    }
+    
+    .product-card p {
+      font-size:20px;
+      margin-top: 1rem;
+      font-family: "Roboto Condensed";
+      /* width:400px; */
+      text-align: justify;
+    }
+    .product-title {
+      font-size:25px;
+      font-family:"Roboto Condensed";
+      font-weight: 600;
+  font-weight: bold;
+    }
+    .price {
+      font-size: 1.4rem;
+      color: #000;
+      font-family: "Poppins";
+    }
+    .original-price {
+      text-decoration: line-through;
+      color: gray;
+      font-size: 1rem;
+      margin-left: 10px;
+    }
+    .add-to-cart {
+      background: #c80000;
+      border: none;
+      color: #fff;
+      padding: 10px 30px;
+      font-weight: bold;
+      border-radius: 50px;
+      transition: 0.3s ease;
+      font-family: "Roboto Condensed";
+    }
+    .add-to-cart:hover {
+      background: #b3001a;
+    }
+    .thumbs img {
+      width: 140px;
+      margin-top: 20px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    .thumbs img.active {
+      border-color: #e60023;
+    }
+
+.accordion .accordion-item {
+  border: 2px solid rgba(146, 146, 146, 1);
+  border-radius: 6px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-color: #fff;
+  font-family: "Roboto";
+}
+
+/* .accordion-button::before {
+    content: "+";
+    position: absolute;
+    right: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+} */
+    .accordion-button:not(.collapsed) {
+      background-color: #f8f9fa;
+      color: #000;
+      
+    }
+    .accordion-button::after {
+      display: none !important;
+    }
+    .accordion-button .toggle-icon {
+      margin-left: auto;
+    }
+    .accordion-button.collapsed .toggle-icon i {
+      transform: rotate(0deg);
+    }
+    .accordion-button:not(.collapsed) .toggle-icon i {
+      transform: rotate(180deg);
+      transition: transform 0.3s ease;
+    }
+.section-performance {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+.performance-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 70%;
+  border: 2px solid #000;
+}
+
+.performance-img {
+  width: 100%;
+  /* height: 500px; */
+  display: block;
+}
+
+.cta-box {
+  position: absolute;
+  top: 60%;
+  right: -40%;
+  transform: translateY(-80%);
+  background: linear-gradient(to right, #8b0000, #000);
+  color: white;
+  padding: 40px;
+  text-align: center;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.cta-box h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-bottom: 20px;
+  
+}
+
+.cta-box .btn-outline-light {
+  border: 2px solid #fff;
+  font-weight: 500;
+  padding: 10px 20px;
+  font-size: 14px;
+  width:250px;
+  margin-left:20%;
+}
+/* #img-aluminum{
+height:400px;
+margin-top:10px;
+align-items: center;
+} */
+
+    .tab-content h4 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    .tab-content p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #ccc;
+      /* width: 450px; */
+      text-align: justify;
+    }
+
+  .scrollbar-container {
+    width: 100%;
+    height: 8px;
+    background: #ddd;
+    position: relative;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  .scrollbar-handle {
+    height: 8px;
+    width: 60px;
+    background: #c80000;;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    transition: background 0.2s;
+  }
+
+  .scrollbar-handle:hover {
+    background:#c80000;
+  }
+
+  /* .owl-carousel .card {
+    background: #f5f5f5;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+  } */
+  #u{
+  
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      font-family: "Fugaz One";
+color:#000
+    }
+
+
+
+
